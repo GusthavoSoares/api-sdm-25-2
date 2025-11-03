@@ -11,9 +11,9 @@ Projeto desenvolvido na UC de Sistemas Distribuídos e Mobile da FADERGS no seme
 
 3) Instale o [Insomnia](https://insomnia.rest/download)
 
-4) Na pasta `insomnia > endpoints_api`, faça o import pela aplicação para que todos os endpoints da API possam ser acessados.
+4) Na pasta `insomnia > endpoints_api`, faça o import pelo Insomnia para que todos os endpoints da API possam ser acessados.
 
-5) Rode um `node index.js` para iniciar a API e iniciar o projeto!
+5) Rode um `node index.js` para iniciar o projeto!
 
 ---
 # Endpoints:
