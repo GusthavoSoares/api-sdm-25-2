@@ -1,24 +1,29 @@
-class Cliente {
+export default class Cliente {
     #nome
     #altura
-    #dataNascimento
-
-    constructor(nome, altura, dataNascimento) {
+    #nascimento
+    #cidadeId
+    constructor(nome, altura, nascimento, cidadeId = null) {
         this.#nome = nome
         this.#altura = altura
-        this.#dataNascimento = dataNascimento
+        this.#nascimento = nascimento
+        this.#cidadeId = cidadeId
     }
 
     retornarNome() {
-        this.#nome
+        return this.#nome
     }
 
     retornarAltura() {
-        this.#altura
+        return this.#altura
     }
 
     retornarNascimento() {
-        this.#dataNascimento
+        return this.#nascimento
+    }
+
+    retornarCidadeId() {
+        return this.#cidadeId
     }
 
     atualizarNome(novoNome) {
@@ -29,7 +34,11 @@ class Cliente {
         this.#altura = novaAltura
     }
 
-    atualizarDataNascimento(novoNascimento) {
-        this.#dataNascimento = novoNascimento
+    atualizarNascimento(novoNascimento) {
+        this.#nascimento = novoNascimento
+    }
+
+    atualizarCidadeId(novoIdCidade) {
+        this.#cidadeId = novoIdCidade
     }
 }

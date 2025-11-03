@@ -1,4 +1,4 @@
-class Cidade{
+export default class Cidade{
 #nome
 
 constructor(nome){
@@ -6,7 +6,7 @@ constructor(nome){
 }
 
 retornarNome(){
-    this.#nome
+    return this.#nome
 }
 
 atualizarNome(novoNome){

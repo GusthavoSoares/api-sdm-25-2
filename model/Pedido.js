@@ -1,10 +1,12 @@
-class Pedido {
+export default class Pedido {
     #horario
     #endereco
+    #clienteId
 
-    constructor(horario, endereco) {
+    constructor(horario, endereco, clienteId = null) {
         this.#horario = horario
         this.#endereco = endereco
+        this.#clienteId = clienteId
     }
 
     retornarHorario() {
@@ -14,6 +16,9 @@ class Pedido {
     retornarEndereco() {
         return this.#endereco
     }
+    retornarClienteId() {
+        return this.#clienteId
+    }
 
     atualizarHorario(novoHorario) {
         this.#endereco = novoHorario
@@ -21,5 +26,9 @@ class Pedido {
 
     atualizarEndereco(novoEndereco) {
         this.#endereco = novoEndereco
+    }
+
+    atualizarClienteId(novoClienteId) {
+        this.#clienteId = novoClienteId
     }
 }

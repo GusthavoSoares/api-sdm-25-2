@@ -1,12 +1,14 @@
-class Produto {
+export default class Produto {
     #nome
     #preco
     #quantidade
+    #categoriaId
 
-    constructor(nome, preco, quantidade) {
+    constructor(nome, preco, quantidade, categoriaId) {
         this.#nome = nome
         this.#preco = preco
         this.#quantidade = quantidade
+        this.#categoriaId = categoriaId
     }
 
     retornarNome() {
@@ -21,6 +23,10 @@ class Produto {
         return this.#quantidade
     }
 
+    retornarCategoriaId() {
+        return this.#categoriaId
+    }
+
     atualizarNome(novoNome) {
         this.#nome = novoNome
     }
@@ -30,5 +36,9 @@ class Produto {
 
     atualizarQuantidade(novaQuantidade) {
         this.#quantidade = novaQuantidade
+    }
+
+    atualizarCategoriaId(novaCategoriaId) {
+        this.#categoriaId = novaCategoriaId
     }
 }

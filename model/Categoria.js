@@ -1,4 +1,4 @@
-class Categoria {
+export default class Categoria {
     #nome
 
     constructor(nome) {
@@ -6,7 +6,7 @@ class Categoria {
     }
 
     retornarNome() {
-        this.#nome
+        return this.#nome
     }
 
     atualizarNome(novoNome) {

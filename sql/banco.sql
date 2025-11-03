@@ -1,3 +1,5 @@
+CREATE DATABASE sdm_25_2;
+
 USE sdm_25_2;
 
 CREATE TABLE cidades (
